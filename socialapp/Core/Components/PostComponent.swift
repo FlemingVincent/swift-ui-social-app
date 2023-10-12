@@ -11,11 +11,7 @@ struct PostComponent: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 8) {
-                Image("")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                AvatarComponent()
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
