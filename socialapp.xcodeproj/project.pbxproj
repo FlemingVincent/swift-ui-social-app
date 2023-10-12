@@ -23,6 +23,7 @@
 		944091212AD835EB00E09B4C /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944091202AD835EB00E09B4C /* PostComponent.swift */; };
 		944091242AD8467900E09B4C /* AvatarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944091232AD8467900E09B4C /* AvatarComponent.swift */; };
 		944091262AD8473500E09B4C /* UserComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944091252AD8473500E09B4C /* UserComponent.swift */; };
+		944091292AD8500B00E09B4C /* ProfileTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944091282AD8500B00E09B4C /* ProfileTabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		944091202AD835EB00E09B4C /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
 		944091232AD8467900E09B4C /* AvatarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarComponent.swift; sourceTree = "<group>"; };
 		944091252AD8473500E09B4C /* UserComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserComponent.swift; sourceTree = "<group>"; };
+		944091282AD8500B00E09B4C /* ProfileTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +258,7 @@
 		9440911C2AD834CB00E09B4C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				944091272AD84FF200E09B4C /* Model */,
 				9440911D2AD834D500E09B4C /* View */,
 			);
 			path = Profile;
@@ -277,6 +280,14 @@
 				944091252AD8473500E09B4C /* UserComponent.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		944091272AD84FF200E09B4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				944091282AD8500B00E09B4C /* ProfileTabs.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +368,7 @@
 				944091082AD71AA800E09B4C /* TextFieldModifier.swift in Sources */,
 				944090EC2AD713BC00E09B4C /* ContentView.swift in Sources */,
 				944090EA2AD713BC00E09B4C /* socialappApp.swift in Sources */,
+				944091292AD8500B00E09B4C /* ProfileTabs.swift in Sources */,
 				9440910B2AD71C9700E09B4C /* TabBarView.swift in Sources */,
 				944091132AD8338600E09B4C /* ExploreView.swift in Sources */,
 				944091242AD8467900E09B4C /* AvatarComponent.swift in Sources */,
