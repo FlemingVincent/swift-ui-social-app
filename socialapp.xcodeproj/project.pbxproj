@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940FE3E02ADEEFC10033BA22 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FE3DF2ADEEFC10033BA22 /* EditProfileView.swift */; };
 		944090EA2AD713BC00E09B4C /* socialappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944090E92AD713BC00E09B4C /* socialappApp.swift */; };
 		944090EC2AD713BC00E09B4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944090EB2AD713BC00E09B4C /* ContentView.swift */; };
 		944090EE2AD713BD00E09B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944090ED2AD713BD00E09B4C /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940FE3DF2ADEEFC10033BA22 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		944090E62AD713BC00E09B4C /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944090E92AD713BC00E09B4C /* socialappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socialappApp.swift; sourceTree = "<group>"; };
 		944090EB2AD713BC00E09B4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		940FE3DD2ADEEF9D0033BA22 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				940FE3DE2ADEEFB20033BA22 /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		940FE3DE2ADEEFB20033BA22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				940FE3DF2ADEEFC10033BA22 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		944090DD2AD713BC00E09B4C = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +276,7 @@
 		9440911C2AD834CB00E09B4C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				940FE3DD2ADEEF9D0033BA22 /* EditProfile */,
 				944091272AD84FF200E09B4C /* Model */,
 				9440911D2AD834D500E09B4C /* View */,
 			);
@@ -362,6 +381,7 @@
 			files = (
 				9440910F2AD73E1800E09B4C /* FeedView.swift in Sources */,
 				944091172AD8343800E09B4C /* CreateView.swift in Sources */,
+				940FE3E02ADEEFC10033BA22 /* EditProfileView.swift in Sources */,
 				944091032AD714AE00E09B4C /* LoginView.swift in Sources */,
 				944091212AD835EB00E09B4C /* PostComponent.swift in Sources */,
 				9440911B2AD8348C00E09B4C /* ActivityView.swift in Sources */,
