@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TabBarView: View {
     @State private var selectedTab = 0
+    @State private var previousTab = 0
+    @State private var showCreateView = false
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -25,7 +27,7 @@ struct TabBarView: View {
                 }
                 .onAppear { selectedTab = 1 }
                 .tag(1)
-            CreateView()
+            Text("")
                 .tabItem {
                     Image(systemName: "plus")
                 }
@@ -46,6 +48,17 @@ struct TabBarView: View {
                 .onAppear { selectedTab = 4 }
                 .tag(4)
         }
+        .onChange(of: selectedTab, { oldValue, newValue in
+            showCreateView = selectedTab == 2
+            if selectedTab != 2 {
+                previousTab = selectedTab
+            }
+        })
+        .sheet(isPresented: $showCreateView, onDismiss: {
+            selectedTab = previousTab
+        }, content: {
+            CreateView()
+        })
         .tint(.black)
     }
 }
