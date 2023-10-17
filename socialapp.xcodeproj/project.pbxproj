@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		940FE3E02ADEEFC10033BA22 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FE3DF2ADEEFC10033BA22 /* EditProfileView.swift */; };
+		940FE3E32ADF07500033BA22 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 940FE3E22ADF07500033BA22 /* Supabase */; };
+		940FE3E72ADF088B0033BA22 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FE3E62ADF088B0033BA22 /* RegistrationViewModel.swift */; };
+		940FE3E92ADF0BFB0033BA22 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FE3E82ADF0BFB0033BA22 /* AuthService.swift */; };
+		940FE3EC2ADF0F7A0033BA22 /* _Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FE3EB2ADF0F7A0033BA22 /* _Supabase.swift */; };
+		940FE3F22ADF1AF10033BA22 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FE3F12ADF1AF10033BA22 /* LoginViewModel.swift */; };
 		944090EA2AD713BC00E09B4C /* socialappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944090E92AD713BC00E09B4C /* socialappApp.swift */; };
-		944090EC2AD713BC00E09B4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944090EB2AD713BC00E09B4C /* ContentView.swift */; };
+		944090EC2AD713BC00E09B4C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944090EB2AD713BC00E09B4C /* RootView.swift */; };
 		944090EE2AD713BD00E09B4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944090ED2AD713BD00E09B4C /* Assets.xcassets */; };
 		944090F12AD713BD00E09B4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944090F02AD713BD00E09B4C /* Preview Assets.xcassets */; };
 		944091032AD714AE00E09B4C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944091022AD714AE00E09B4C /* LoginView.swift */; };
@@ -29,9 +34,13 @@
 
 /* Begin PBXFileReference section */
 		940FE3DF2ADEEFC10033BA22 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		940FE3E62ADF088B0033BA22 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		940FE3E82ADF0BFB0033BA22 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		940FE3EB2ADF0F7A0033BA22 /* _Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _Supabase.swift; sourceTree = "<group>"; };
+		940FE3F12ADF1AF10033BA22 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		944090E62AD713BC00E09B4C /* socialapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socialapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944090E92AD713BC00E09B4C /* socialappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socialappApp.swift; sourceTree = "<group>"; };
-		944090EB2AD713BC00E09B4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		944090EB2AD713BC00E09B4C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		944090ED2AD713BD00E09B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		944090F02AD713BD00E09B4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		944091022AD714AE00E09B4C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940FE3E32ADF07500033BA22 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +82,39 @@
 			isa = PBXGroup;
 			children = (
 				940FE3DF2ADEEFC10033BA22 /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		940FE3E42ADF084A0033BA22 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				940FE3E62ADF088B0033BA22 /* RegistrationViewModel.swift */,
+				940FE3F12ADF1AF10033BA22 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		940FE3E52ADF086D0033BA22 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				940FE3E82ADF0BFB0033BA22 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		940FE3EA2ADF0F590033BA22 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				940FE3EB2ADF0F7A0033BA22 /* _Supabase.swift */,
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		940FE3F02ADF171A0033BA22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				944090EB2AD713BC00E09B4C /* RootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +142,7 @@
 				944090FD2AD713FE00E09B4C /* Core */,
 				944090FC2AD713FB00E09B4C /* Extensions */,
 				944090FB2AD713F700E09B4C /* Model */,
+				940FE3EA2ADF0F590033BA22 /* Secrets */,
 				944090F92AD713E900E09B4C /* Services */,
 				944090F72AD713DA00E09B4C /* Utils */,
 				944090ED2AD713BD00E09B4C /* Assets.xcassets */,
@@ -171,7 +215,9 @@
 		944090FF2AD7146400E09B4C /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				940FE3E52ADF086D0033BA22 /* Service */,
 				944091012AD7148A00E09B4C /* Views */,
+				940FE3E42ADF084A0033BA22 /* ViewModels */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -179,7 +225,7 @@
 		944091002AD7146E00E09B4C /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				944090EB2AD713BC00E09B4C /* ContentView.swift */,
+				940FE3F02ADF171A0033BA22 /* View */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -325,6 +371,9 @@
 			dependencies = (
 			);
 			name = socialapp;
+			packageProductDependencies = (
+				940FE3E22ADF07500033BA22 /* Supabase */,
+			);
 			productName = socialapp;
 			productReference = 944090E62AD713BC00E09B4C /* socialapp.app */;
 			productType = "com.apple.product-type.application";
@@ -353,6 +402,9 @@
 				Base,
 			);
 			mainGroup = 944090DD2AD713BC00E09B4C;
+			packageReferences = (
+				940FE3E12ADF07500033BA22 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 944090E72AD713BC00E09B4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,13 +432,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9440910F2AD73E1800E09B4C /* FeedView.swift in Sources */,
+				940FE3E72ADF088B0033BA22 /* RegistrationViewModel.swift in Sources */,
 				944091172AD8343800E09B4C /* CreateView.swift in Sources */,
+				940FE3EC2ADF0F7A0033BA22 /* _Supabase.swift in Sources */,
+				940FE3E92ADF0BFB0033BA22 /* AuthService.swift in Sources */,
 				940FE3E02ADEEFC10033BA22 /* EditProfileView.swift in Sources */,
 				944091032AD714AE00E09B4C /* LoginView.swift in Sources */,
 				944091212AD835EB00E09B4C /* PostComponent.swift in Sources */,
+				940FE3F22ADF1AF10033BA22 /* LoginViewModel.swift in Sources */,
 				9440911B2AD8348C00E09B4C /* ActivityView.swift in Sources */,
 				944091082AD71AA800E09B4C /* TextFieldModifier.swift in Sources */,
-				944090EC2AD713BC00E09B4C /* ContentView.swift in Sources */,
+				944090EC2AD713BC00E09B4C /* RootView.swift in Sources */,
 				944090EA2AD713BC00E09B4C /* socialappApp.swift in Sources */,
 				944091292AD8500B00E09B4C /* ProfileTabs.swift in Sources */,
 				9440910B2AD71C9700E09B4C /* TabBarView.swift in Sources */,
@@ -600,6 +656,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		940FE3E12ADF07500033BA22 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		940FE3E22ADF07500033BA22 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 940FE3E12ADF07500033BA22 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 944090DE2AD713BC00E09B4C /* Project object */;
 }
